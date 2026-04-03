@@ -4,7 +4,7 @@ const NavButtons = ({ currentIndex, total, onPrev, onNext }) => {
   return (
     <div className="nav-buttons">
       <button onClick={onPrev} disabled={currentIndex === 0}>
-        Previous
+        ⬅ Previous
       </button>
 
       <span>
@@ -12,7 +12,7 @@ const NavButtons = ({ currentIndex, total, onPrev, onNext }) => {
       </span>
 
       <button onClick={onNext} disabled={currentIndex === total - 1}>
-        Next
+        Next ➡
       </button>
     </div>
   );
