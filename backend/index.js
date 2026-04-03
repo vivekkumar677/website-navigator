@@ -17,7 +17,7 @@ app.use(express.json());
 app.use('/api/files', fileRoutes);
 
 app.get('/', (req, res) => {
-    console.log('Received request for root endpoint');
+    res.send('Welcome to the File Upload API');
 });
 
 const PORT = process.env.PORT || 5000;
