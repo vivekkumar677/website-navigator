@@ -15,7 +15,7 @@ app.use(express.json());
 app.use('/api/files', fileRoutes);
 
 app.get('/', (req, res) => {
-    res.json({ message: 'Hello from the backend!' });
+    console.log('Received request for root endpoint');
 });
 
 const PORT = process.env.PORT || 5000;
