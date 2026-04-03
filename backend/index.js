@@ -14,7 +14,7 @@ app.use(express.json());
 
 app.use('/api/files', fileRoutes);
 
-app.get('/api/data', (req, res) => {
+app.get('/', (req, res) => {
     res.json({ message: 'Hello from the backend!' });
 });
 
